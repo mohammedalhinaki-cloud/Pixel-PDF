@@ -121,7 +121,6 @@ Pixel PDF has over 100 tools. These ones aren't in PDF24's [list of all tools](h
 
 Because Pixel PDF runs in the browser, you can [host your own copy](/docs/self-hosting) for your whole team. Run it inside your company network with Docker, and nobody has to send files to an outside website. It works the same on every computer, whatever operating system your staff use.
 
-If you want to put your own branding on it, or build it into a closed-source product, there's a [commercial license](/licensing). That's also what pays for the project.
 
 ## When PDF24 is the better pick
 

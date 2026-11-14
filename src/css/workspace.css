@@ -1771,6 +1771,31 @@ body > footer.px-footer {
   border-color: #2b484b;
 }
 
+/* Keep interactive controls readable in dark mode. Some legacy pages use
+   Tailwind's bg-white on buttons; those surfaces must follow the workspace
+   palette while document previews and canvases remain intentionally white. */
+:root[data-theme='dark'] button.bg-white,
+:root[data-theme='dark'] a.bg-white,
+:root[data-theme='dark'] .btn.bg-white,
+:root[data-theme='dark'] .button.bg-white {
+  background-color: var(--pxw-surface-2) !important;
+  border-color: var(--pxw-line-strong) !important;
+  color: var(--pxw-ink) !important;
+}
+
+:root[data-theme='dark'] button.bg-white:hover,
+:root[data-theme='dark'] a.bg-white:hover,
+:root[data-theme='dark'] .btn.bg-white:hover,
+:root[data-theme='dark'] .button.bg-white:hover {
+  background-color: var(--pxw-teal-soft) !important;
+  color: var(--pxw-ink) !important;
+}
+
+:root[data-theme='dark'] .compact-mode .tool-card:hover {
+  background-color: var(--pxw-surface-2) !important;
+  border-color: var(--pxw-line-strong) !important;
+}
+
 /* --------------------------------------------------------------------------
    Responsive behaviour
    -------------------------------------------------------------------------- */

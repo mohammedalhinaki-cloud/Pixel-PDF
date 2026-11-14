@@ -113,7 +113,6 @@ Pixel PDF has over 100 tools. These ones aren't in the tool list on iLovePDF's p
 
 Because Pixel PDF runs in the browser, you can [host your own copy](/docs/self-hosting) for your whole team. Run it inside your company network with Docker, and nobody has to send files to an outside website.
 
-If you want to put your own branding on it, or build it into a closed-source product, there's a [commercial license](/licensing). That's also what pays for the project.
 
 ## When iLovePDF is the better pick
 

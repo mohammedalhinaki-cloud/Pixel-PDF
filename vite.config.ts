@@ -38,10 +38,6 @@ function loadPages(): Set<string> {
 
   const rootPages = [
     'index',
-    'faq',
-    'privacy',
-    'terms',
-    'licensing',
     'advertise',
     '404',
     'pdf-converter',
@@ -609,10 +605,6 @@ export default defineConfig(({ command }) => {
             process.env.SIMPLE_MODE === 'true'
               ? resolve(__dirname, 'simple-index.html')
               : resolve(__dirname, 'index.html'),
-          faq: resolve(__dirname, 'faq.html'),
-          privacy: resolve(__dirname, 'privacy.html'),
-          terms: resolve(__dirname, 'terms.html'),
-          licensing: resolve(__dirname, 'licensing.html'),
           ...(showAds
             ? { advertise: resolve(__dirname, 'advertise.html') }
             : {}),
