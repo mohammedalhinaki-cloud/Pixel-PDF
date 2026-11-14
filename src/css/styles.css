@@ -1761,7 +1761,7 @@ details > summary .icon {
   border: 1px solid rgba(43, 52, 70, 0.096);
   border-radius: 12px;
   background: #ffffff;
-  box-shadow: 0 18px 44px -12px rgba(28, 42, 76, 0.20);
+  box-shadow: 0 18px 44px -12px rgba(28, 42, 76, 0.2);
   transform: translateX(-50%);
 }
 
@@ -1914,4 +1914,59 @@ details > summary .icon {
   flex-direction: column;
   gap: 0.25rem;
   padding: 0.25rem 0;
+}
+
+/* Unified volunteer feedback footer */
+.px-unified-footer {
+  border-top: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  text-align: center;
+}
+.px-unified-footer-inner {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  padding: 28px 20px calc(24px + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.px-unified-footer-note,
+.px-unified-footer-copy {
+  margin: 0;
+  line-height: 1.9;
+  color: inherit;
+}
+.px-unified-footer-note {
+  max-width: 760px;
+  font-size: 13px;
+}
+.px-unified-footer-copy {
+  opacity: 0.72;
+  font-size: 12px;
+}
+.px-unified-footer-feedback {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 7px;
+  min-height: 34px;
+  padding: 4px 12px;
+  border-radius: 9px;
+  color: var(--pxw-teal-dark, #168b82) !important;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
+.px-unified-footer-feedback:hover {
+  background: color-mix(in srgb, currentColor 10%, transparent);
+  transform: translateY(-1px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .px-unified-footer-feedback {
+    transition: none;
+  }
+  .px-unified-footer-feedback:hover {
+    transform: none;
+  }
 }
