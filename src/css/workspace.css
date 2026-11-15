@@ -1796,6 +1796,28 @@ body > footer.px-footer {
   border-color: var(--pxw-line-strong) !important;
 }
 
+/* Arabic tool cards have a more specific light-theme rule in
+   arabic-premium.css. Override the complete card surface in dark mode while
+   keeping icon accents and document preview canvases unchanged. */
+:root[data-theme='dark'] #tool-grid .tool-card {
+  background: var(--pxw-surface) !important;
+  border-color: var(--pxw-line) !important;
+  box-shadow: var(--pxw-shadow-sm);
+}
+
+:root[data-theme='dark'] #tool-grid .tool-card:hover {
+  background: var(--pxw-surface-2) !important;
+  border-color: var(--pxw-line-strong) !important;
+}
+
+:root[data-theme='dark'] #tool-grid .tool-card h3 {
+  color: var(--pxw-ink) !important;
+}
+
+:root[data-theme='dark'] #tool-grid .tool-card p {
+  color: var(--pxw-muted) !important;
+}
+
 /* --------------------------------------------------------------------------
    Responsive behaviour
    -------------------------------------------------------------------------- */
