@@ -125,10 +125,9 @@ function listDocsHtml(dir, prefix) {
 }
 
 function addDocsToSitemap() {
-  const siteUrl = (process.env.SITE_URL || 'https://www.pixelpdf.com').replace(
-    /\/+$/,
-    ''
-  );
+  const siteUrl = (
+    process.env.SITE_URL || 'https://pixelpdf.maaoun.com'
+  ).replace(/\/+$/, '');
   const sitemapPath = path.join(mainDistPath, 'sitemap.xml');
   if (!fs.existsSync(sitemapPath)) {
     console.warn(

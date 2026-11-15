@@ -12,7 +12,7 @@ const LOCALES_DIR = path.resolve(__dirname, '../public/locales');
 // The blog is Pixel PDF's own content, so generate-blog.mjs and the hand-written
 // blog pages keep their canonicals on the official site, also in self-hosted
 // builds with a custom SITE_URL or BASE_URL.
-const OFFICIAL_SITE_URL = 'https://www.pixelpdf.com';
+const OFFICIAL_SITE_URL = 'https://pixelpdf.maaoun.com';
 const SITE_URL = (process.env.SITE_URL || OFFICIAL_SITE_URL).replace(
   /\/+$/,
   ''
@@ -382,7 +382,6 @@ function auditSitemap() {
   }
 
   // One Arabic canonical URL per page; no language alternates are generated.
-
 }
 
 function main() {

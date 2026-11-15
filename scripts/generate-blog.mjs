@@ -10,10 +10,9 @@ const __dirname = path.dirname(__filename);
 const POSTS_DIR = path.resolve(__dirname, '../blog/posts');
 const BLOG_DIR = path.resolve(__dirname, '../blog');
 // Placeholder domain: override with SITE_URL when deploying to your own host.
-const SITE_URL = (process.env.SITE_URL || 'https://www.pixelpdf.com').replace(
-  /\/$/,
-  ''
-);
+const SITE_URL = (
+  process.env.SITE_URL || 'https://pixelpdf.maaoun.com'
+).replace(/\/$/, '');
 const AUTHOR = {
   name: 'علام',
   url: `${SITE_URL}/blog/author-alam`,
@@ -379,8 +378,7 @@ ${cards}
         '@type': 'Blog',
         name: 'مدونة بيكسل PDF',
         url: `${SITE_URL}/blog`,
-        description:
-          'أدلة ومقارنات من مطوّر بيكسل PDF.',
+        description: 'أدلة ومقارنات من مطوّر بيكسل PDF.',
         publisher: {
           '@type': 'Organization',
           name: 'Pixel PDF',

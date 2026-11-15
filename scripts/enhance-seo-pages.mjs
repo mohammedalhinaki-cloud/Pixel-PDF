@@ -9,10 +9,9 @@ const __dirname = path.dirname(__filename);
 
 const DIST_DIR = path.resolve(__dirname, '../dist');
 const BASE_PATH = (process.env.BASE_URL || '/').replace(/\/$/, '');
-const SITE_URL = (process.env.SITE_URL || 'https://www.pixelpdf.com').replace(
-  /\/+$/,
-  ''
-);
+const SITE_URL = (
+  process.env.SITE_URL || 'https://pixelpdf.maaoun.com'
+).replace(/\/+$/, '');
 
 const FALLBACK_SOCIAL_IMAGE = '/images/og-tools.png';
 

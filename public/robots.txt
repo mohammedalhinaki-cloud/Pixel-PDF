@@ -1,12 +1,12 @@
 # Pixel PDF Robots.txt
-# https://www.pixelpdf.com
+# https://pixelpdf.maaoun.com
 
 # Allow all crawlers
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.pixelpdf.com/sitemap.xml
+Sitemap: https://pixelpdf.maaoun.com/sitemap.xml
 
 # Disallow internal/system paths
 Disallow: /api/
